@@ -15,9 +15,7 @@
 		7C47D6FB2AB2464B00C65B1A /* aleo_wasm.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C47D6F92AB2464B00C65B1A /* aleo_wasm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7C47D6FE2AB2465C00C65B1A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C47D6FD2AB2465400C65B1A /* libz.tbd */; };
 		7C47D7002AB259F100C65B1A /* aleo_wasm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C47D6FF2AB259F000C65B1A /* aleo_wasm.swift */; };
-		7C47D7022AB25A4600C65B1A /* Auction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C47D7012AB25A4600C65B1A /* Auction.swift */; };
-		7C47D7052AB25B6200C65B1A /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C47D7042AB25B6200C65B1A /* Program.swift */; };
-		7CF64ED02AB269EE007FD63F /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF64ECF2AB269EE007FD63F /* Calculator.swift */; };
+		7CF64ED22AB4F8C5007FD63F /* TransactionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF64ED12AB4F8C5007FD63F /* TransactionDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,9 +41,7 @@
 		7C47D6F92AB2464B00C65B1A /* aleo_wasm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = aleo_wasm.xcframework; path = ../aleo_wasm.xcframework; sourceTree = "<group>"; };
 		7C47D6FD2AB2465400C65B1A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		7C47D6FF2AB259F000C65B1A /* aleo_wasm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = aleo_wasm.swift; path = ../../aleo_wasm.swift; sourceTree = "<group>"; };
-		7C47D7012AB25A4600C65B1A /* Auction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auction.swift; sourceTree = "<group>"; };
-		7C47D7042AB25B6200C65B1A /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
-		7CF64ECF2AB269EE007FD63F /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		7CF64ED12AB4F8C5007FD63F /* TransactionDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +77,12 @@
 		7C47D6E92AB2461E00C65B1A /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				7C47D7032AB25A4E00C65B1A /* Programs */,
 				7C47D6FF2AB259F000C65B1A /* aleo_wasm.swift */,
 				7C47D6EA2AB2461E00C65B1A /* DemoApp.swift */,
 				7C47D6EC2AB2461E00C65B1A /* ContentView.swift */,
 				7C47D6EE2AB2461F00C65B1A /* Assets.xcassets */,
 				7C47D6F02AB2461F00C65B1A /* Preview Content */,
+				7CF64ED12AB4F8C5007FD63F /* TransactionDetails.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -106,16 +102,6 @@
 				7C47D6F92AB2464B00C65B1A /* aleo_wasm.xcframework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7C47D7032AB25A4E00C65B1A /* Programs */ = {
-			isa = PBXGroup;
-			children = (
-				7C47D7042AB25B6200C65B1A /* Program.swift */,
-				7C47D7012AB25A4600C65B1A /* Auction.swift */,
-				7CF64ECF2AB269EE007FD63F /* Calculator.swift */,
-			);
-			path = Programs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,12 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C47D7052AB25B6200C65B1A /* Program.swift in Sources */,
-				7C47D7022AB25A4600C65B1A /* Auction.swift in Sources */,
 				7C47D6ED2AB2461E00C65B1A /* ContentView.swift in Sources */,
-				7CF64ED02AB269EE007FD63F /* Calculator.swift in Sources */,
 				7C47D6EB2AB2461E00C65B1A /* DemoApp.swift in Sources */,
 				7C47D7002AB259F100C65B1A /* aleo_wasm.swift in Sources */,
+				7CF64ED22AB4F8C5007FD63F /* TransactionDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    var privateKey = " < insert private key > "
+    var privateKey = "private key here"
     var feeRecord = """
-            < insert fee record >
+        fee record here 
     """
 
     @State var shouldCacheKeys = false
@@ -77,6 +77,8 @@ struct ContentView: View {
                         let transactionId = try await request(endpoint: "transaction/broadcast", isPost: true, params: result)
                         
                         outputFieldText  = "Successfully broadcast transaction \(transactionId)"
+                        
+                        print("Successfully broadcast transation \(transactionId)")
                     } catch(let error) {
                         print ("Error \n\(error)")
                         outputFieldText = error.localizedDescription

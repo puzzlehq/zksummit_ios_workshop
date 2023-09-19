@@ -15,7 +15,7 @@ Starter code for ZKSummit 10 iOS proving workshop.
 5. Open `Demo.xcodeproj` inside `Demo/`
 6. Add your private key and a record with credits to pay the fee 
 7. Build and run (hit the play icon on the top bar) 
-8. Execute with the following params:
+8. Execute with the following params (reference code for the program can be found [here](https://www.aleo.network/programs/zksummit_token_v10.aleo)):
   - Program name: `zksummit_token_v10.aleo`
   - Function: `mint_private`
   - Input 1: `your private key`

@@ -8,26 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
-    var privateKey = "APrivateKey1zkp8vyGbEch6sLZMzqju1YcoZwoW38J9GSANbbrLsiNWUSP"
+    var privateKey = " < insert private key > "
     var feeRecord = """
-       {owner:aleo1a3g7pavunw5nwwx433lhq04jmks6wkvxsdeqw3gn6h8kdrj7wsps3qf90w.private,microcredits:45987280u64.private,_nonce:1250401054121131963735862795638259572533351746000593644303469830546926936712group.public}
+            < insert fee record >
     """
+
     @State var shouldCacheKeys = false
     
-    @State var programName = "puzzlecalculator.aleo"
-    @State var functionName = "multiply"
+    @State var programName = ""
+    @State var functionName = ""
     
-    @State var inputValues: [String] = ["10i32", "8i32"]
+    @State var inputValues: [String] = ["", ""]
     
     @State var outputFieldText = ""
     
     var body: some View {
         VStack {
-            TextField("Program name", text: $programName)
+            TextInput(placeholder: "Program name", text: $programName)
                 .textInputAutocapitalization(.never)
                 .autocorrectionDisabled(true)
             
-            TextField("Function name", text: $functionName)
+            TextInput(placeholder: "Function name", text: $functionName)
                 .textInputAutocapitalization(.never)
                 .autocorrectionDisabled(true)
             
@@ -47,6 +48,8 @@ struct ContentView: View {
             }
             ForEach(0 ..< inputValues.count, id: \.self) { index in
                 TextField("Input \(index)", text: $inputValues[index])
+                    .padding(8)
+                    .overlay(RoundedRectangle(cornerRadius: 10.0).strokeBorder(.black, style: StrokeStyle(lineWidth: 1.0)))
             }
             
             Toggle("Cache proving/verifying keys", isOn: $shouldCacheKeys)
@@ -73,9 +76,9 @@ struct ContentView: View {
                         
                         let transactionId = try await request(endpoint: "transaction/broadcast", isPost: true, params: result)
                         
-                        print ("Successfully broadcast transaction \(transactionId)")
+                        outputFieldText  = "Successfully broadcast transaction \(transactionId)"
                     } catch(let error) {
-                        print ("Error executing program\n\(error)")
+                        print ("Error \n\(error)")
                         outputFieldText = error.localizedDescription
                     }
                 }
@@ -99,6 +102,12 @@ private func request(endpoint: String, isPost: Bool, params: String?) async thro
     request.httpMethod = isPost ? "POST" : "GET"
 
     let (data, response) = try await URLSession.shared.data(for: request)
+    
+    if let urlResponse = response as? HTTPURLResponse, urlResponse.statusCode != 200 {
+        print("Error broadcasting transaction")
+        
+    }
+    
     return try JSONDecoder().decode(String.self, from: data)
 }
 

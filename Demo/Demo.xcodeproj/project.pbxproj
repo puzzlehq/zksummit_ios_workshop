@@ -16,6 +16,8 @@
 		7C47D6FE2AB2465C00C65B1A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C47D6FD2AB2465400C65B1A /* libz.tbd */; };
 		7C47D7002AB259F100C65B1A /* aleo_wasm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C47D6FF2AB259F000C65B1A /* aleo_wasm.swift */; };
 		7CF64ED22AB4F8C5007FD63F /* TransactionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF64ED12AB4F8C5007FD63F /* TransactionDetails.swift */; };
+		7CF64ED52AB9E860007FD63F /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF64ED32AB9E860007FD63F /* ButtonStyle.swift */; };
+		7CF64ED62AB9E860007FD63F /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF64ED42AB9E860007FD63F /* TextInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +44,8 @@
 		7C47D6FD2AB2465400C65B1A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		7C47D6FF2AB259F000C65B1A /* aleo_wasm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = aleo_wasm.swift; path = ../../aleo_wasm.swift; sourceTree = "<group>"; };
 		7CF64ED12AB4F8C5007FD63F /* TransactionDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetails.swift; sourceTree = "<group>"; };
+		7CF64ED32AB9E860007FD63F /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		7CF64ED42AB9E860007FD63F /* TextInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		7C47D6E92AB2461E00C65B1A /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				7CF64ED32AB9E860007FD63F /* ButtonStyle.swift */,
+				7CF64ED42AB9E860007FD63F /* TextInput.swift */,
 				7C47D6FF2AB259F000C65B1A /* aleo_wasm.swift */,
 				7C47D6EA2AB2461E00C65B1A /* DemoApp.swift */,
 				7C47D6EC2AB2461E00C65B1A /* ContentView.swift */,
@@ -178,7 +184,9 @@
 				7C47D6ED2AB2461E00C65B1A /* ContentView.swift in Sources */,
 				7C47D6EB2AB2461E00C65B1A /* DemoApp.swift in Sources */,
 				7C47D7002AB259F100C65B1A /* aleo_wasm.swift in Sources */,
+				7CF64ED52AB9E860007FD63F /* ButtonStyle.swift in Sources */,
 				7CF64ED22AB4F8C5007FD63F /* TransactionDetails.swift in Sources */,
+				7CF64ED62AB9E860007FD63F /* TextInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +322,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,6 +351,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

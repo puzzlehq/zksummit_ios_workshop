@@ -25,5 +25,6 @@ Starter code for ZKSummit 10 iOS proving workshop.
 10. Try a transfer execution, or any aleo program you'd like!
 
 
-## Notes 
+## Common errors
 - Types for number inputs must be specified, so if your aleo function takes an `i32` input, `3` must be formatted as `3i32` in the input field
+- `None could not be unwrapped....`: Ensure you have added your private keys and fee record in `ContentView.swift`

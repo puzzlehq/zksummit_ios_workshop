@@ -5,7 +5,7 @@ Starter code for ZKSummit 10 iOS proving workshop.
 
 - Install [brew](https://brew.sh)
 - Install `git-lfs` (`brew install git-lfs`)
-- Download [Xcode](https://developer.apple.com/xcode/)
+- Download [Xcode](https://developer.apple.com/xcode/) (and add iOS if you don't have it)
   
 ## Workshop 
 1. Navigate to [ZKSummit token dapp](https://zksummit10.vercel.app)

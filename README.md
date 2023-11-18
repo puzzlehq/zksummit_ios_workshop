@@ -1,4 +1,8 @@
 # zksummit_ios_workshop
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/0C5ACGtPTrY/0.jpg)](https://www.youtube.com/watch?v=0C5ACGtPTrY)
+
+
 Starter code for ZKSummit 10 iOS proving workshop. 
 
 ## Prerequisites (BEFORE cloning the repo): 
